@@ -1,0 +1,20 @@
+[package]
+name = "json_api_client"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+async-oauth2 = { git = "https://github.com/kycdao/async-oauth2", branch = "configurable_refresh_url" }
+isocountry = "0.3"
+log = "0.4"
+reqwest = { version = "0.11", features = ["json"] }
+rust_decimal = { version = "1.28", features = ["serde-float"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+url = "2.3"
+thiserror = "1.0"
+time = "0.3"
+
+[dev-dependencies]
+tokio = { version = "1.25", features = ["macros"] }
+time = { version = "0.3", features = ["serde-well-known"] }
